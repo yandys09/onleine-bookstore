@@ -28,7 +28,6 @@ public class Book {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
 	
-	
 	private String sku;
 	
 	private String name;
@@ -39,7 +38,7 @@ public class Book {
 	private BigDecimal unitPrice;
 	
 	@Column(name="image_url")
-	private String imgeUrl;
+	private String imageUrl;
 	
 	private boolean active;
 	
@@ -47,11 +46,11 @@ public class Book {
 	private int unitsInStock;
 	
 	@Column(name="date_created")
-	private Date createOn;
+	private Date createdOn;
 	
 	@Column(name="last_updated")
-	private Date updateOn;
-	
+	private Date updatedOn;
+
 	@ManyToOne
 	@JoinColumn(name="category_id", nullable=false)
 	private BookCategory category;

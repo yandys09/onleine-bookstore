@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 import in.bushansirgur.onlinebookstore.entity.Book;
 
-@CrossOrigin("http://localhost:4200/")
+@CrossOrigin("http://localhost:4200")
 public interface BookRepository extends JpaRepository<Book, Long> {
 
 }
